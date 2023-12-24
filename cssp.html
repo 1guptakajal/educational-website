@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <link rel="stylesheet" href="kg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+</head>
+
+<body>
+    <nav class="sticky">
+        <div class="logo">
+            <img src="logo.jpg" width="50" height="50px">
+        </div>
+        <div class="channel">K.G ACADEMY</div>
+        <div class="nav-links">
+
+            <ul>
+                <li><a href="kg.html">Home</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About US</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="menu">
+        <ul>
+            <li><a href="bca.html">BCA</a></li>
+            <li><a href="c.html">C</a></li>
+            <li><a href="cPlus.html">C++</a></li>
+            <li><a href="java.html">JAVA</a></li>
+            <li><a href="htmlp.html">HTML</a></li>
+            <li><a href="cssp.html">CSS</a></li>
+            <li><a href="javascriptp.html">JAVASCRIPT</a></li>
+            <li><a href="python.html">PYTHON</a></li>
+        </ul>
+    </div>
+    <div class="bcacontent">
+        <div class="sidebar">
+            <header>
+                <h2>BCA </h2>
+            </header>
+            <h5>(BRAB University) <BR>Css Tutorial<BR></h5>
+            <div class="BCA1"> <b>Contents </b>
+                <UL>
+                    <li><a href="">Introduction</a></li>
+                    <li><a href="">Selector</a></li>
+                    <li><a href="">Font attributes</a></li>
+                    <li><a href="">List attributes</a></li>
+                    <li><a href="">Color</a></li>
+                    <li><a href="">Alignment of text</a></li>
+                    <li><a href="">The box model</a></li>
+                    <li><a href="">Backgroud images</a></li>
+                    <li><a href="">The span and div tags</a></li>
+                </UL>
+            </div>
+
+
+        </div>
+    <div class="unit1">
+    <h1>Introduction</h1>
+    <div class="pre">
+        <p><b>CSS is the language we use to style a Web page.</b></p>
+        <h4>What is CSS?</h4>
+        <p>Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the
+            process of making web pages presentable. CSS allows you to apply styles to web pages. More importantly, CSS
+            enables you to do this independently of the HTML that makes up each web page. It describes how a webpage
+            should look: it prescribes colours, fonts, spacing, and much more. In short, you can make your website look
+            however you want. CSS lets developers and designers define how it behaves, including how elements are
+            positioned in the browser.
+
+            <br>While HTML uses tags, CSS uses rulesets. CSS is easy to learn and understand, but it provides powerful
+            control over the presentation of an HTML document.
+        </p>
+    </div>
+    <h1>syntax</h1>
+    <div class="syn">
+        <p>CSS comprises style rules that are interpreted by the browser and then applied to the corresponding elements
+            in your document. A style rule set consists of a selector and declaration block.</p>
+        <ol>
+            <li>Selector: A selector in CSS is used to target and select specific HTML elements to apply styles to.</li>
+            <li>Declaration: A declaration in CSS is a combination of a property and its corresponding value.<br>
+                Selector -- h1
+                Declaration -- {color:blue;font size:12px;}</li>
+            </or>
+            <ul>
+                <li>The selector points to the HTML element you want to style.</li>
+                <li>The declaration block contains one or more declarations separated by semicolons.</li>
+                <li>Each declaration includes a CSS property name and a value, separated by a colon.</li>
+            </ul>
+    </div>
+    <h1>Selector</h1>
+    <div class="selector">
+        <p>A CSS selector selects the HTML element(s) for styling purposes. CSS selectors select HTML elements according
+            to their id, class, type, attribute, etc.<br><br>
+
+            CSS selectors: There are many basic different types of selectors.<br>
+        <ul>
+            <li>Simple Selector: It is used to select the HTML elements based on their element name, id, attributes,
+                etc.</li>
+        </ul><br>
+        <ol>
+            <li>Element selector</li>
+            <li>Id selector</li>
+            <li>Class selector</li>
+            <li>Universal selector</li>
+            <li>Group selector</li>
+        </ol>
+        </p>
+        <h2>Element selector</h2>
+        <p>The element selector selects HTML elements based on the element name (or tag) for example p, h1, div, span,
+            etc.</p><br>
+        <p>style.css: The following code is used in the above Example. You can see the CSS rules applied to all p tags
+            and h1 tags.</p>
+        <h3>syntax</h3>
+        <p>h1 {
+            color: red;
+            font-size: 3rem;
+            }
+            <br><br>
+            p {
+            color: white;
+            background-color: gray;
+            }
+        </p>
+        <h2>Id selector</h2>
+        <p>The id selector uses the id attribute of an HTML element to select a specific element.<br><br>
+
+            Note: An id of the element is unique on a page to use the id selector.<br><br>
+
+            style.css: The following code is used in the above Example using the id selector.<br><br>
+
+        <h3>Syntax:</h3>
+
+        #div-container{ <br>
+        color: blue;<br>
+        background-color: gray;
+        }</p>
+        <h2>Class selector</h2>
+        <p> The class selector selects HTML elements with a specific class attribute.<br><br>
+
+            style.css: The following code is used in the above Example using the class selector. To use a class selector
+            you must use ( . ) followed by class name in CSS. This rule will be applied to the HTML element with the
+            class attribute “paragraph-class“<br><br>
+
+        <h3> Syntax:</h3>
+
+        .paragraph-class {<br>
+        color:white;<br>
+        font-family: monospace;<br>
+        background-color: purple;
+        }</p>
+        <h2>Universal selector</h2>
+        <p>The Universal selector (*) in CSS is used to select all the elements in an HTML document. It also includes
+            other elements which are inside under another element.<br><br>
+
+            style.css: The following code is used in the above Example using the universal selector. This CSS rule will
+            be applied to each and every HTML element on the page: <br><br>
+
+        <h3>Syntax:</h3>
+
+        * {<br>
+        color: white;<br>
+        background-color: black;<br>
+        }</p>
+        <h2>Group selector</h2>
+        <p>This selector is used to style all comma-separated elements with the same style.<br>
+
+            style.css: The following code is used in the above Example using the group selector. Suppose you want to
+            apply common styles to different selectors, instead of writing rules separately you can write them in groups
+            as shown below.<br><br>
+
+        <h3>Syntax:</h3>
+
+        #div-container, .paragraph-class, h1{<br>
+        color: white;<br>
+        background-color: purple;<br>
+        font-family: monospace; <br>
+        }</p>
+    </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="column1">
+                <div class="logo">
+                    <img src="logo.jpg" width="50" height="50px">
+                </div>
+                <div class="channel">K.G ACADEMY</div>
+            </div>
+            <div class="column2">
+                <h1>BCA </h1>
+                <ul>
+                    <li><a href="firstSemester.html">First Semester</a></li>
+                    <li><a href="secondSemester.html">Second Semester</a></li>
+                    <li><a href="thirdSemester.html">Third Semester</a></li>
+                    <li><a href="fourthSemester.html">Fourth Semester</a></li>
+                    <li><a href="fifthSemester.html">Fifth Semester</a></li>
+                </ul>
+            </div>
+            <div class="column3">
+                <h1>GET IN TOUCH</h1>
+                <ul>
+                    <li>kajalgupta62064@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>

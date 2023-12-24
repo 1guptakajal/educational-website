@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <link rel="stylesheet" href="kg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+</head>
+
+<body>
+    <nav class="sticky">
+        <div class="logo">
+            <img src="logo.jpg" width="50" height="50px">
+        </div>
+        <div class="channel">K.G ACADEMY</div>
+        <div class="nav-links">
+
+            <ul>
+                <li><a href="kg.html">Home</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About US</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="menu">
+        <ul>
+            <li><a href="bca.html">BCA</a></li>
+            <li><a href="c.html">C</a></li>
+            <li><a href="cPlus.html">C++</a></li>
+            <li><a href="java.html">JAVA</a></li>
+            <li><a href="htmlp.html">HTML</a></li>
+            <li><a href="cssp.html">CSS</a></li>
+            <li><a href="javascriptp.html">JAVASCRIPT</a></li>
+            <li><a href="python.html">PYTHON</a></li>
+        </ul>
+    </div>
+    <div class="bcacontent">
+        <div class="sidebar">
+            <header>
+                <h2>BCA </h2>
+                <h5>(BRAB University) <BR><BR>Numerical Methodology</BR></BR></h5>
+            </header>
+            <div class="BCA1"> <b>UNIT-1 : <br> nonlinear algebraic and transcendental equations </b>
+                <UL>
+                    <li><a href=""> Bisection method</a></li>
+                    <li><a href=""> false position method</a></li>
+                    <li><a href=""> Newton Raphson method</a></li>
+                    <li><a href="">iterative Method</a></li>
+                    <li><a href="">Lin Bairstow's method</a></li>
+
+                </UL>
+            </div>
+
+            <div class="BCA1"> <b>UNIT-2 : <br> Solution of Simultaneous linear equation </b>
+                <UL>
+                    <li><a href="">Gauss elimination method</a></li>
+                    <li><a href="">Gauss jordan method</a></li>
+                    <li><a href="">LU Decomposition method</a></li>
+                    <li><a href="">Crout's Method</a></li>
+                    <li><a href="">Jacobi method</a></li>
+                    <li><a href="">Gauss Seidel method</a></li>
+                    <li><a href="">7Relaxation method</a></li>
+                    <li><a href="">Inverse of a matrix using iterative method</a></li>
+                </UL>
+            </div>
+
+            <div class="BCA1"><b>UNIT :- 3</b>
+                <UL>
+                    <li><a href="">Finite differences: introduction and differet types of operators and relation between
+                            them</a></li>
+                    <li><a href="">Factorial notation and Polynomial in factorial notation</a></li>
+
+                </UL>
+            </div>
+            <div class="BCA1"><b>UNIT-4 : </b>
+
+                <UL>
+                    <li><a href="">Introduction Newton forward and backward interpolation</a></li>
+                    <li><a href="">Newton Divide difference</a></li>
+                    <li><a href="">Lagrange's interpolation</a></li>
+                    <li><a href="">Central difference interpolation formula</a></li>
+                    <li><a href="">Gauss forward and backward interpolation formula</a></li>
+                    <li><a href="">Numerical differentiation</a></li>
+                </UL>
+            </div>
+
+            <div class="BCA1"><b>UNIT :- 5 <br>Numerical Integration </b>
+                <UL>
+                    <li><a href=""> Trapezoidal rule</a></li>
+                    <li><a href=""> simpson's rules</a></li>
+                    <li><a href=""> Weddle's rules</a></li>
+
+                </UL>
+            </div>
+            <div class="BCA1"><B>UNIT :- 6 <br>(Solution of Ordinary differential equation)</B>
+                <ul>
+                    <li><a href=""> Euler's Method</a></li>
+                    <li><a href="">Euler's modified method</a></li>
+                    <li><a href="">Runga kutta method</a></li>
+                    <li><a href="">Taylor's series Method</a></li>
+                    <li><a href="">Picard's Method</a></li>
+                    <li><a href="">Adams-Bashforth method</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="unit1">
+            <h2>Bisection Method</h2><br><br>
+            <div>
+                <p>The bisection method is used to find the roots of a polynomial equation. It separates the interval
+                    and subdivides the interval in which the root of the equation lies. The principle behind this method
+                    is the intermediate theorem for continuous functions. It works by narrowing the gap between the
+                    positive and negative intervals until it closes in on the correct answer. This method narrows the
+                    gap by taking the average of the positive and negative intervals. It is a simple method and it is
+                    relatively slow. The bisection method is also known as interval halving method, root-finding method,
+                    binary search method or dichotomy method.</p><br>
+                <p>Let us consider a continuous function “f” which is defined on the closed interval [a, b], is given
+                    with f(a) and f(b) of different signs. Then by intermediate theorem, there exists a point x belong
+                    to (a, b) for which f(x) = 0.</p><br>
+                <h2>Bisection Method Algorithm</h2><br>
+                <p>For any continuous function f(x) ,<br><br>
+
+                <p> 1. Find two points, say a and b such that a < b and f(a)* f(b) < 0 </p><br>
+                        <br<p>2. the midpoint of a and b, say
+                            “t” </p><br><br>
+                <p>3. t is the root of the given function if f(t)=0; else follow the next step </p><br><br>
+                <p>4.
+                    the interval
+                    [a, b] – If f(t)*f(a) <0, there exist a root between t and a – else if f(t) *f (b) < 0, there exist
+                        a root between t and b </p><br>
+                        <p>5. above three steps until f(t)=0.</p><br><br>
+                        <p> The bisection method is an
+                            approximation method to find the roots of the given equation by repeatedly dividing the
+                            interval. This method will divide the interval until the resulting interval is found, which
+                            is
+                            extremely small.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="column1">
+                <div class="logo">
+                    <img src="logo.jpg" width="50" height="50px">
+                </div>
+                <div class="channel">K.G ACADEMY</div>
+            </div>
+            <div class="column2">
+                <h1>BCA </h1>
+                <ul>
+                    <li><a href="firstSemester.html">First Semester</a></li>
+                    <li><a href="secondSemester.html">Second Semester</a></li>
+                    <li><a href="thirdSemester.html">Third Semester</a></li>
+                    <li><a href="fourthSemester.html">Fourth Semester</a></li>
+                    <li><a href="fifthSemester.html">Fifth Semester</a></li>
+                </ul>
+            </div>
+            <div class="column3">
+                <h1>GET IN TOUCH</h1>
+                <ul>
+                    <li>kajalgupta62064@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>

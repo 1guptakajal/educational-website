@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 80%;
+    overflow: hidden;
+}
+
+.channel {
+    padding: 10px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(3, 48, 39);
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color: rgb(2, 2, 96);
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+    background-color: rgb(19, 19, 141);
+}
+
+.active,
+.nav-links ul li:hover {
+    background-color: rgb(106, 106, 11);
+    border-radius: 3px;
+}
+
+.menu {
+    background-color: black;
+    position: sticky;
+    top: 70px;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 12px;
+    position: relative;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.menu ul li::after {
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+
+.menu ul li:hover {
+    background-color: rgb(136, 136, 13);
+    border-radius: 3px;
+}
+
+.heading {
+    padding: 80px;
+    background-color: rgb(72, 72, 11);
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.search-box {
+    background-color: black;
+    width: 400px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.input-search {
+    background-color: transparent;
+    border: 0px;
+    outline: 0px;
+    color: white;
+}
+
+.icon-search {
+    padding: 10px;
+    width: 40px;
+    color: white;
+    background-color: black;
+}
+/* search engin*/
+.result-box ul{
+border-top: 1px solid white;
+padding: 15px 10px;
+}
+.result-box ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+
+}
+.result-box ul li:hover{
+    background-color: #5c7d2e;
+}
+.result-box ul li a{
+    color: white;
+    text-decoration: none;
+}
+/**/
+.recommended {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.video-container {
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(3, 48, 39);
+}
+
+.Videoes {
+    display: inline-block;
+    margin: 25px;
+    border-radius: 25px;
+
+}
+.Videoes:hover{
+    scale: 1.2;
+}
+
+/* id selector */
+#Video1 {
+    background-color: black;
+    padding: 10px;
+    width: 350px;
+    transition: 1s;
+}
+
+#Video2 {
+    background-color: black;
+    padding: 10px;
+    width: 350px;
+
+}
+
+#Video3 {
+    background-color: black;
+    padding: 10px;
+    width: 350px;
+}
+
+.text {
+    color: white;
+}
+
+.button {
+    background-color: white;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.button:hover {
+    color: blue;
+    background-color: aqua;
+
+}
+
+/*video player adjecement */
+.rv1 {
+    border: 15px;
+    padding: 2px;
+    background-color: rgb(224, 226, 220);
+}
+
+/* footer code*/
+.footer-container {
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(3, 48, 39);
+}
+
+.column2 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+/*course page*/
+.coursepage {
+    padding: 20px;
+    text-align: center;
+}
+
+.prev a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.prev a:hover {
+    background-color: #403d95;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #5c7d2e;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+/* tutorial page*/
+
+.coursebox {
+    padding: 1px 50px;
+}
+
+.coursename {
+    padding: 1px 3px;
+    margin: 20px;
+    color: white;
+}
+
+.coursebutton {
+    padding: 10px 35px;
+}
+
+.tutorialContainer {
+    display: inline-block;
+    padding: 30px;
+    margin: 25px;
+    border-radius: 25px;
+    background-color: rgb(3, 48, 39);
+    box-shadow: 5px 5px 5px 5px rgb(27, 121, 102);
+}
+.tutorialContainer:hover{
+    scale: 1.2;
+}
+/* Contact page */
+.contact {
+    margin: 50px;
+}
+.contactus{
+    border-radius:95px;
+    overflow: hidden  ;
+}
+.contactContainer{
+    background-color: rgb(3, 48, 39);
+}
+h3{
+    padding: 20px;
+    margin: 10px ;
+    color: white;
+}
+.contactlink{
+    padding: 20px ;
+}
+
+/*about us page css*/
+.aboutme{
+    padding: 100px;
+    background-color:rgb(3, 48, 39) ;
+    margin: 30px;
+}
+.ame{
+    padding: 20px;
+    border-radius: 50px 0px 50px 0px;
+    background-color: white;
+}
+/* bca page css*/
+.sidebar {
+    height: 600px;
+    width: 200px;
+    background-color: rgb(146, 146, 82);
+    padding: 20px;
+    overflow: scroll;
+}
+
+.BCA1 {
+    padding: 20px;
+    color: black;
+}
+
+.BCA1 ul li {
+    padding: 10px;
+}
+
+.BCA1 ul li a {
+    color: rgb(63, 63, 64);
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.BCA1 ul li:hover {
+    background-color: rgb(136, 136, 13);
+    border-radius: 3px;
+}
+
+.bcacontent {
+    display: flex;
+
+}
+
+.firstsempyq h2 {
+    text-align: center;
+    padding: 50px;
+
+}
+
+/*math css*/
+.solution {
+    padding: 10px 100px;
+}
+
+.unit1 {
+    height: 600px;
+    padding: 20px;
+    width:1100px;
+    overflow-y: scroll;
+}
